@@ -123,6 +123,8 @@ git branch
 ## 删除分支
 ``` git
 git branch -d dev
+或
+git branch -D dev
 ```
 
 ## 合并分支
@@ -140,3 +142,31 @@ git stash
 ```git
 git stash pop
 ```
+
+## 创建标签
+```git
+git tag tag_id
+或
+git tag tag_id commit_id
+```
+
+## 查看标签
+```git
+git tag
+```
+
+## 标签详情
+```git
+git show tag_id
+```
+
+## 推送标签
+```git
+git push origin tag_id
+或
+git push origin --tags
+```
+
+## 删除标签
++ 1.删除本地标签：git tag -d tag_id
++ 2.删除远程标签：先删除本地，然后git push origin :refs/tags/tag_id
