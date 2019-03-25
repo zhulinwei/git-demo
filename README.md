@@ -18,6 +18,8 @@ git commit -m 'some describe'
 ## 查看日志
 ```git
 git log --pretty=oneline
+或
+git reflog
 ```
 
 ## 版本回退
@@ -26,5 +28,10 @@ git log --pretty=oneline
 ```git
 git reset --hard HEAD^
 ```
+### 回退指定版本A
+```git
+git reset --hard id_of_A
+```
+
 
 
