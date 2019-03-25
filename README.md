@@ -20,3 +20,11 @@ git commit -m 'some describe'
 git log --pretty=oneline
 ```
 
+## 版本回退
+
+### 回退上一个版本
+```git
+git reset --hard HEAD^
+```
+
+
