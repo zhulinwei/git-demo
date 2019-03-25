@@ -83,3 +83,5 @@ git reset --hard commit_id_of_A
 ### 撤销远程版本库中的文件修改
 撤不了，没救了
 
+### 删除文件
+
