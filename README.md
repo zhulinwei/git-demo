@@ -14,3 +14,9 @@ git add file.txt
 ```git
 git commit -m 'some describe'
 ```
+
+## 查看日志
+```git
+git log --pretty=oneline
+```
+
