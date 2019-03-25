@@ -83,5 +83,7 @@ git reset --hard commit_id_of_A
 ### 撤销远程版本库中的文件修改
 撤不了，没救了
 
-### 删除文件
-
+### 删除文件与恢复
+1.如果你用rm删除文件，那就相当于只删除了工作区的文件，如果想要恢复，可直接用git checkout -- file就可以
+2.如果你用的是git rm删除文件，那就相当于不仅删除了文件，而且还添加到了暂存区，需要先git reset HEAD file，然后再git checkout -- file
+3.如果你想彻底把版本库的删除掉，先git rm，再git commit，文件以后是无法恢复了
