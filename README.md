@@ -54,3 +54,10 @@ git reset --hard commit_id_of_A
 ```git
 git status
 ```
+
+## 比较不同
+```git 
+git diff master
+或
+git diff master -- file.txt
+```
