@@ -61,3 +61,25 @@ git diff master
 或
 git diff master -- file.txt
 ```
+
+### 撤销修改
+
+### 撤销工作区中的文件修改
+注意双横杠，如果没有双横杠的话git checkout就变成了切换分支了
+```git
+git checkout -- file
+```
+
+### 撤销暂存区中的文件修改
+```git
+git reset HEAD file
+```
+
+### 撤销版本库中的文件修改
+```git
+git reset --hard commit_id_of_A
+```
+
+### 撤销远程版本库中的文件修改
+撤不了，没救了
+
