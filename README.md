@@ -39,7 +39,6 @@ git reflog
 ```
 
 ## 版本回退
-
 ### 回退上一个版本
 ```git
 git reset --hard HEAD^
@@ -105,6 +104,17 @@ git push -u origin master
 ## 克隆远程库
 ```git
 git clone url_of_repository
+或
+git clone -b branch_name url_of_repository
+```
+
+## 拉取远程库
+```git
+git pull
+```
+如果不希望拉取的过程中有合并操作，我们可以：
+```git
+git pull --rebase
 ```
 
 ## 创建分支
@@ -118,6 +128,8 @@ git checkout dev
 ## 查看分支
 ```git
 git branch
+或
+git branch -a
 ```
 
 ## 删除分支
