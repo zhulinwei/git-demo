@@ -132,11 +132,16 @@ git branch
 git branch -a
 ```
 
-## 删除分支
+## 删除本地分支
 ``` git
 git branch -d dev
 或
 git branch -D dev
+```
+
+## 删除远程分支
+``` git
+git push origin :branch_name
 ```
 
 ## 合并分支
