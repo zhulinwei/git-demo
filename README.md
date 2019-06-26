@@ -132,6 +132,11 @@ git branch
 git branch -a
 ```
 
+## 拉取远程分支到本地
+```git
+git checkout -b local_branch_name origin/remore_branch_name
+```
+
 ## 删除本地分支
 ``` git
 git branch -d dev
